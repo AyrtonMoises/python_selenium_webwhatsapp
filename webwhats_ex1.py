@@ -4,7 +4,7 @@ import time
 
 
 options = Options()
-#PATH_PROFILE = 'C:\\Users\\T-Gamer\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 2'
+#PATH_PROFILE = 'C:\\Users\\username\\AppData\\Local\\Google\\Chrome\\User Data\\Profile'
 #options.add_argument('--user-data-dir={}'.format(PATH_PROFILE)) #Directory profile save session whatsapp
 options.add_argument("--disable-gpu")
 

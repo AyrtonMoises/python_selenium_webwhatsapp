@@ -13,8 +13,8 @@ driver = None
 def main():
     global driver
     options = Options()
-    PATH_PROFILE = 'C:\\Users\\T-Gamer\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 2'
-    options.add_argument('--user-data-dir={}'.format(PATH_PROFILE))
+    #PATH_PROFILE = 'C:\\Users\\username\\AppData\\Local\\Google\\Chrome\\User Data\\Profile' #Directory profile save session whatsapp
+    #options.add_argument('--user-data-dir={}'.format(PATH_PROFILE))
     options.add_argument("--disable-gpu")
 
     driver = webdriver.Chrome(executable_path="D:\\projetos\\selenium_drivers\\chromedriver.exe", options=options)
@@ -27,7 +27,7 @@ def main():
         while keep_running:
             time.sleep(10) #time to run
             try:
-                contacts = ['Teste','Teste', 'Teste']
+                contacts = ['Contact 1','Contact 2', 'Contact 3']
                 for contact in contacts:
                     give_options(contact,['*Title*','Body message'])
                     time.sleep(8)
@@ -36,7 +36,6 @@ def main():
                 keep_running = False
 
         print('Bot closed')
-
 
 def give_options(user_name,message,interval=1):
     message_after_interval(interval, user_name.strip(), message)
